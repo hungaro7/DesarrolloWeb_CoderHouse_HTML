@@ -1,0 +1,249 @@
+* /* ------------------------------------- RESETEO ---------------------------------*/
+{
+margin: 0;
+padding: 0;
+}
+
+
+.caja_1-2 /* ------------------------------------- NAV ---------------------------------*/
+{
+    background-color: black;
+    width: auto;
+    height: auto;
+    color: white;
+    text-align:center;
+    border: solid 5px white;
+    overflow: hidden;
+    padding: 15px;
+    margin: 5px;
+}
+
+.caja_2 /* ------------------------------------- caja secciones ---------------------------------*/
+{
+background-color: gray;
+height: 73%;
+width: 89%;
+margin-left: 15px;
+padding-top: 20px;
+color: black;
+text-align:center;
+border: solid 5px black;
+}
+
+.caja_3 /* ------------------------------------- caja footer ---------------------------------*/
+{
+background-color: grey;
+width:auto;
+height: auto;
+color:black;
+margin: 0px;
+padding: 10px;
+overflow: hidden;
+
+}
+
+
+
+.boton /* ------------------------------------- BOTONES ---------------------------------*/
+{
+color: silver;
+background-color: orange;
+border: solid 3px black;
+width: auto;
+height: auto;
+margin:10px;
+padding: 10px;
+}
+
+
+h2 
+{
+color: silver;
+background-color: black;
+width: auto;
+margin: 5px;
+padding: 5px;
+border: solid 3px green;
+text-align: center;
+}
+
+section h4
+{
+color: white;
+}
+
+article
+{
+margin: 5px;
+padding: 0px;
+align-items: center;
+}
+
+/* ------------------------------------- FORMULARIO ---------------------------------*/
+
+.contacto
+{
+background-color: silver;
+color: black;
+border: solid 8px black;
+margin: 50px;
+content: 20px;
+padding: 10px;
+height: 30%;
+width: auto;
+align-items: center;
+}
+
+form
+{
+background-color: rgb(173, 139, 76);
+color: black;
+border: solid 6px green;
+padding: 50px;
+width: min-content;
+}
+
+
+/* ------------------------------------- GRILLAS ---------------------------------*/
+
+
+.grilla-header /* -------------------------------------GRILLA HEADER  ---------------------------------*/
+{
+display:grid;
+grid-template-columns: 2fr 0.5fr;
+gap: 1px;
+border: solid 1px black;
+
+grid-template-areas: 
+                     "caja_1 caja_1b" 
+
+                     
+}
+
+
+.grilla-areas /* ------------------------------------- GRILLA SECCIONES ---------------------------------*/
+{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: repeat(4,19vh);
+
+gap: 0px;
+padding: 0px;
+margin: 0px;
+grid-template-areas: 
+                     "section-1 section-2 section-3 section-4 "
+                     "section-1 section-2 section-3 section-4 "
+                     "section-1 section-2 section-3 section-4 "
+                     "footer footer footer footer"
+
+}
+
+.grilla-index /* ------------------------------------- GRILLA INDEX ---------------------------------*/
+{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 4fr 1fr;
+gap: 0px;
+width: auto;
+height: auto;
+
+grid-template-areas: 
+                     
+                     "section-1 section-2 section-3 section-4"
+                     "footer footer footer footer"
+                    
+}
+
+
+
+
+
+
+
+.caja_1 /* ------------------------------------- caja header IZQ ---------------------------------*/
+
+{
+display:grid;   
+background-color: gray;
+width:auto;
+height: auto;
+color: white;
+text-align:left;
+overflow: hidden;
+padding: 20px;
+margin: 1px;
+grid-area:caja_1;
+}
+
+.caja_1b /* ------------------------------------- caja header DER ---------------------------------*/
+{
+display:grid;   
+background-color: gray;
+width: auto;
+height: auto;
+color: white;
+border: solid 1px black;
+overflow: hidden;
+padding: 10px;
+margin: 0px;
+grid-area:caja_1b;
+}
+
+.section-1{
+background-color: skyblue;
+border: solid 4px green;
+grid-area:section-1;
+height: auto;
+width: auto;
+margin: 2px;
+overflow: visible;
+}
+
+.section-2{
+    background-color: skyblue;
+    border: solid 4px green;
+    grid-area: section-2;
+    height: auto;
+    width: auto;
+    margin: 2px;
+    padding: 2px;
+    overflow: visible;
+
+}
+
+.section-3{
+    background-color: skyblue;
+    border: solid 4px green;
+    grid-area: section-3;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    margin: 2px;
+    padding: 2px;
+    
+}
+
+
+.section-4{
+    background-color: skyblue;
+    border: solid 4px green;
+    grid-area:section-4;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    margin: 2px;
+    padding: 2px;
+    }
+
+
+footer
+{
+    background-color: gray;
+    border: solid 5px black; 
+    grid-area: footer;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+    
