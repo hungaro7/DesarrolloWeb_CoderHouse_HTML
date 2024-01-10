@@ -4,84 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body><!-----------------------------------------  BODY      --------------------------------------------->
         
-    <header> <!-----------------------------------------  HEADER      --------------------------------------------->
-        <div class="grilla-header"> <!------------------ grilla header ------------------------------------>
-            <section class="caja_1">
-                <h1> Horogh Design </h1>
-                
-                <h4> Diseños industriales</h4>
-                
-            </section>
-
-            <section class="caja_1b">
-                <img src="./image/logo.png" alt="logo" width="max-witdh" height="75px" />             </section>
-                                
-            
-        </div>    
-        
-        </div>
-            <div class="caja_1-2"> <!------------------------ Nav ---------------------------------------------> 
-                <nav> 
-                    <hr>
-                    <br>
-                    <h3>  Adrian Horogh  -    Tec Univ en Mecatronica  -  Santa Fe, Argentina  </h3>
-                    <br>
-                    <hr>
+    <header>
+         
+         <nav class="navbar navbar-expand-lg bg-black"> <!------------------------ Nav ---------------------------------------------> 
+            <div class="container-fluid">
+              <img src="./image/logo.png" alt="logo" height="50px">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"  >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Index</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Views-pages/servicios.html" target="_parent">Servicios</a>
+                  </li>
+          
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Views-pages/proyectos.html" target="_parent">Proyectos</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                      <a class="nav-link" href="./Views-pages/quienes_somos.html" target="_parent">Quienes somos</a>
+                  </li>
+          
+                  <li class="nav-item">
+                      <a class="nav-link" href="./Views-pages/contacto.html" target="_parent">Contacto</a>
+                  </li>
                 </nav>
-            </div>   
-        </div>
-        
-
-        
-
+            </nav>
     </header>
             
     <main> <!----------------------------------- MAIN   ---------------------------------------------->
-
-            
-        <br>
-    <div class="grilla-index"> <!------------------------ grilla seccion ------------------------------------>
-        
-        <br>     
-        <section class="section-1"> <!------------------------------- SERVICIOS ----------------------------->
-                
-            <h2> SERVICIOS </h2>
-            <div class =caja_2>
-                    <br> 
-                    <article> 
-                        
-                        <h3> Diseños Industriales </h3>
-                        <br>
-                        <h3> Corte Laser   </h3>
-                        <br>
-                        <h3> Plegados en acero   </h3>
-                        <br>
-                        <h3> Modelos 3D / Renders </h3>
-                        
-                        
-                    </article>
-                    <br> 
-                    <div class="boton"> 
-                        <a href="./Views-pages/servicios.html" target="_parent"><h3> SERVICIOS </h3> </a>   
-                    </div>
-                    
-                
-                <br>
-            <br>
-            
+        <section class="container-fluid hero d-flex justify-content-center align-items-center">
+            <h1 class="text-white bg-gray p-4">HOROGH DESIGN</h1>
         </section>
-                    
     
+        <section class="productos container">
     
-    <section class="section-2"> <!-------------------------------- PROYECTOS --------------------------------> 
+            <div class="row">
+    
+            
+            <article class="card-col-md-1">
+                <img src="./image/cartel.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">SERVICIOS1</h3>
+                  <p class="card-text">
+                    <ul>
+                        <li>Diseños Industriales</li>
+                        <li>Corte Laser</li>
+                        <li>Plegados en acero</li>
+                        <li>Modelos 3D / Renders</li>
+                    </ul>
+                  </p>
+
+                  <a href="./Views-pages/servicios.html" class="btn btn-primary">SERVICIOS</a>
+                </div>
+              </article>
+    
+              <article class="card-col-md-1">
+                <img src="./image/pupitre fisa.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">PROYECTOS</h5>
+                  <p class="card-text">
+                    <ul>
+                        <li>Plegado en Acero</li>
+                        <li>Ingenieria de Detalle</li>
+                        <li>Plegados en acero</li>
+                        <li>Corte Laser</li>  
+                    </ul>
+                  </p>
+                  <a href="./Views-pages/proyectos.html" class="btn btn-primary">PROYECTOS</a>
+                </div>
+              </article>
+    
+              <article class="card-col-md-1">
+                <img src="./image/logo vino.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">QUIENES SOMOS</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="./Views-pages/quienes_somos.html" class="btn btn-primary">QUIENES SOMOS</a>
+                </div>
+              </article>
+
+              <article class="card-col-md-1">
+                <img src="./image/Formulario.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CONTACTO</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="./Views-pages/contacto.html" class="btn btn-primary">CONTACTO</a>
+                </div>
+              </article>
+            </div>
+        </section>
+
+
+
+        <!-- 
+        
+      
+    <section class="section-2"> ------------------------------ PROYECTOS --------------------------------
         <h2> PROYECTOS </h2>
         <div class="caja_2"> 
-        <br><br>
+        
             <article> 
                     <h3> Estructuras Metalicas</h3>
                     <br>
@@ -91,7 +124,7 @@
                     <br>
                     <h3> Corte Laser</h3>        
                 </article>
-                    <br>
+                  
                                 
                 <div class="boton">
                     <a href="./Views-pages/proyectos.html" target="_parent"> <h3> PROYECTOS </h3></a>
@@ -99,43 +132,33 @@
         </div>
     </section>
   
-    <section class="section-3"> <!-- --------------------------- QUIENES SOMOS  ---------------------------->
+    <section class="section-3">  --------------------------- QUIENES SOMOS  ---------------------------
         <h2> QUIENES SOMOS </h2>
             <div class="caja_2">
-                <br>
+               
                 <article> 
-                    <br> 
-                    <br> 
-                    <br> 
-                    <br>    
+                     
                     <h3> Conocenos</h3> 
-                    <br>
-                    <br> 
-                    <br> 
                 </article>
-                
-                <br>
+               
                 <div class="boton"> 
                     <a href="./Views-pages/quienes_somos.html" target="_parent"> <h3> QUIENES SOMOS </h3></a>
-                </div>
+              
     </section>
     
     
-    <section class="section-4"> <!-- --------------------------- CONTACTO  ---------------------------->
+    <section class="section-4"> --------------------------- CONTACTO  ---------------------------
         <h2> CONTACTO </h2>
         <div class="caja_2">
             <br>
             <article>
-                <br> 
-                <br> 
+              
                 <h3> Dejanos tu consulta</h3>
                 <br>
                 <h3> Redes Sociales</h3>                     
-                <br>
-                <br> 
-                <br> 
+                
             </article>
-            <br>
+        
         
             <div class="boton">
                 <a href="./Views-pages/contacto.html" target="_parent"><h3>CONTACTO </h3> </a>
@@ -144,26 +167,19 @@
         </div>
     </section>
 
+-->
 
-    <footer class="footer"><!--------------------------------- FOOTER------------------------------- -->
-        <div class="caja_3">
-            <h2>  Seguinos en redes sociales: </h2>
-            <br>
-            <ul>
-                <li> <h4> Instagram:  <a href="https://www.instagram.com/horogh_design/" target="_blank"> Horogh Design </a></h4>  </li>
-                <li><h4> Linkedin: <a href="https://www.linkedin.com/in/adri%C3%A1n-horogh-0080a11a4/" target="_blank"> linkedin</a> </h4>  </li>
-                <li><h4> E-mail: <a href="https://www.https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" target="_blank"> adrianhorogh@gmail.com</a> </h4>  </li>
-            </ul>
-            <br>  
-            <br>
-        </div>
-    
+
+    <footer>
+        <h1></h1>
     </footer>
+
+</div>
 
 </div>
 
 
 
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

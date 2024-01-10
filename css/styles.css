@@ -236,14 +236,33 @@ overflow: visible;
     }
 
 
-footer
-{
-    background-color: gray;
-    border: solid 5px black; 
-    grid-area: footer;
-    width: auto;
-    margin: 0px;
-    padding: 0px;
-    text-align: left;
+
+    /* ------------------------------------- VERSION 2  ---------------------------------*/
+
+.nav-link{
+    color: white;
 }
+
+
+
+.hero{
+    background-image: url(../image/BANNER\ BLACK.jpg);
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-top: 10px;
     
+
+}
+
+.bg-tomato{
+    background-color: orange;
+}
+.bg-blue{
+    background-color: skyblue;
+}
+
+.card.col{
+    background-color: yellow;
+}
