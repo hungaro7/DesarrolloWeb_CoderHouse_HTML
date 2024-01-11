@@ -1,0 +1,164 @@
+
+$primary-color:gray;
+$secondar-color: black;
+$terciary-color: white;
+
+
+* /* ------------------------------------- RESETEO ---------------------------------*/
+{
+margin: 0;
+padding: 0;
+}
+
+
+
+.boton /* ------------------------------------- BOTONES ---------------------------------*/
+{
+color: silver;
+background-color: orange;
+border: solid 3px black;
+width: auto;
+height: auto;
+margin:10px;
+padding: 10px;
+}
+
+
+h2 
+{
+color: silver;
+background-color: $secondar-color;
+width: auto;
+
+padding: 10px;
+
+border-radius: 10px;
+text-align: center;
+}
+
+section h4
+{
+color: $terciary-color;
+}
+
+article
+{
+margin: 5px;
+padding: 0px;
+align-items: center;
+}
+
+
+    /* ------------------------------------- NAV  ---------------------------------*/
+
+.nav-link{
+    color: white;
+}
+
+
+
+.hero{
+    background-image: url(../image/BANNER\ BLACK.jpg);
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+
+}
+
+.bg-tomato{
+    background-color: orange;
+}
+.bg-blue{
+    background-color: skyblue;
+}
+
+
+
+    /* ------------------------------------- TARJETAS  ---------------------------------*/
+.card img {
+    height: 300px; 
+    object-fit: fill; 
+    width: 85%;
+  }
+
+  .card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: $primary-color;
+  }
+
+.card:hover {
+    transform: scale(1.1)
+  }
+
+  .contenedorCartas{
+    display: flex;
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%; /* Ajusta el ancho al 100% en dispositivos móviles */
+      display: block; /* Mostrar las tarjetas en bloque para que estén una debajo de la otra */ /* Eliminar el margen derecho en dispositivos móviles */
+      margin-bottom: 20px; /* Añadir un espacio entre las tarjetas en dispositivos móviles */
+      padding: 10px;
+    }
+
+    .contenedorCartas{
+    display: block;
+  }
+
+  }
+
+  .navbar-toggler-icon {
+    background-color: $terciary-color;
+    border-radius: 3px;
+  }
+
+  .navbar-toggler-icon::hover {
+    background-color: whitesmoke;
+  }
+
+  /* ---------------------------------  */
+ .btn{
+  color: $terciary-color;
+    background-color: $secondar-color;
+    border: solid $primary-color 5px;
+    border-radius: 20px;
+  
+   
+ }
+
+ footer{
+  color: white;
+
+  background-color: $secondar-color;
+  border: solid $primary-color 5px;
+  margin: 5px;
+  padding: 10px;
+
+ }
+
+ .contenedorCartas{
+  background-color: $primary-color;
+  margin: 10px;
+  padding: 25px;
+ }
+
+ .titulo{
+  text-align: center;
+ }
+
+
+ .mb-3{
+  background-color: $primary-color;
+  color: $secondar-color;
+  margin: 20px;
+  padding: 10px;
+  font-style: oblique;
+  
+ }
+
