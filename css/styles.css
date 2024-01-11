@@ -5,45 +5,6 @@ padding: 0;
 }
 
 
-.caja_1-2 /* ------------------------------------- NAV ---------------------------------*/
-{
-    background-color: black;
-    width: auto;
-    height: auto;
-    color: white;
-    text-align:center;
-    border: solid 5px white;
-    overflow: hidden;
-    padding: 15px;
-    margin: 5px;
-}
-
-.caja_2 /* ------------------------------------- caja secciones ---------------------------------*/
-{
-background-color: gray;
-height: 73%;
-width: 89%;
-margin-left: 15px;
-padding-top: 20px;
-color: black;
-text-align:center;
-border: solid 5px black;
-}
-
-.caja_3 /* ------------------------------------- caja footer ---------------------------------*/
-{
-background-color: grey;
-width:auto;
-height: auto;
-color:black;
-margin: 0px;
-padding: 10px;
-overflow: hidden;
-
-}
-
-
-
 .boton /* ------------------------------------- BOTONES ---------------------------------*/
 {
 color: silver;
@@ -61,9 +22,10 @@ h2
 color: silver;
 background-color: black;
 width: auto;
-margin: 5px;
-padding: 5px;
-border: solid 3px green;
+
+padding: 10px;
+
+border-radius: 10px;
 text-align: center;
 }
 
@@ -104,140 +66,7 @@ width: min-content;
 }
 
 
-/* ------------------------------------- GRILLAS ---------------------------------*/
-
-
-.grilla-header /* -------------------------------------GRILLA HEADER  ---------------------------------*/
-{
-display:grid;
-grid-template-columns: 2fr 0.5fr;
-gap: 1px;
-border: solid 1px black;
-
-grid-template-areas: 
-                     "caja_1 caja_1b" 
-
-                     
-}
-
-
-.grilla-areas /* ------------------------------------- GRILLA SECCIONES ---------------------------------*/
-{
-display:grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: repeat(4,19vh);
-
-gap: 0px;
-padding: 0px;
-margin: 0px;
-grid-template-areas: 
-                     "section-1 section-2 section-3 section-4 "
-                     "section-1 section-2 section-3 section-4 "
-                     "section-1 section-2 section-3 section-4 "
-                     "footer footer footer footer"
-
-}
-
-.grilla-index /* ------------------------------------- GRILLA INDEX ---------------------------------*/
-{
-display:grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 4fr 1fr;
-gap: 0px;
-width: auto;
-height: auto;
-
-grid-template-areas: 
-                     
-                     "section-1 section-2 section-3 section-4"
-                     "footer footer footer footer"
-                    
-}
-
-
-
-
-
-
-
-.caja_1 /* ------------------------------------- caja header IZQ ---------------------------------*/
-
-{
-display:grid;   
-background-color: gray;
-width:auto;
-height: auto;
-color: white;
-text-align:left;
-overflow: hidden;
-padding: 20px;
-margin: 1px;
-grid-area:caja_1;
-}
-
-.caja_1b /* ------------------------------------- caja header DER ---------------------------------*/
-{
-display:grid;   
-background-color: gray;
-width: auto;
-height: auto;
-color: white;
-border: solid 1px black;
-overflow: hidden;
-padding: 10px;
-margin: 0px;
-grid-area:caja_1b;
-}
-
-.section-1{
-background-color: skyblue;
-border: solid 4px green;
-grid-area:section-1;
-height: auto;
-width: auto;
-margin: 2px;
-overflow: visible;
-}
-
-.section-2{
-    background-color: skyblue;
-    border: solid 4px green;
-    grid-area: section-2;
-    height: auto;
-    width: auto;
-    margin: 2px;
-    padding: 2px;
-    overflow: visible;
-
-}
-
-.section-3{
-    background-color: skyblue;
-    border: solid 4px green;
-    grid-area: section-3;
-    height: auto;
-    width: auto;
-    overflow: visible;
-    margin: 2px;
-    padding: 2px;
-    
-}
-
-
-.section-4{
-    background-color: skyblue;
-    border: solid 4px green;
-    grid-area:section-4;
-    height: auto;
-    width: auto;
-    overflow: visible;
-    margin: 2px;
-    padding: 2px;
-    }
-
-
-
-    /* ------------------------------------- VERSION 2  ---------------------------------*/
+    /* ------------------------------------- NAV  ---------------------------------*/
 
 .nav-link{
     color: white;
@@ -263,6 +92,79 @@ overflow: visible;
     background-color: skyblue;
 }
 
-.card.col{
-    background-color: yellow;
-}
+
+
+    /* ------------------------------------- TARJETAS  ---------------------------------*/
+.card img {
+    height: 300px; 
+    object-fit: fill; 
+    width: 85%;
+  }
+
+  .card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: gray;
+  }
+
+.card:hover {
+    transform: scale(1.1)
+  }
+
+  .contenedorCartas{
+    display: flex;
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%; /* Ajusta el ancho al 100% en dispositivos móviles */
+      display: block; /* Mostrar las tarjetas en bloque para que estén una debajo de la otra */ /* Eliminar el margen derecho en dispositivos móviles */
+      margin-bottom: 20px; /* Añadir un espacio entre las tarjetas en dispositivos móviles */
+      padding: 10px;
+    }
+
+    .contenedorCartas{
+    display: block;
+  }
+
+  }
+
+  .navbar-toggler-icon {
+    background-color: white;
+    border-radius: 3px;
+  }
+
+  .navbar-toggler-icon::hover {
+    background-color: whitesmoke;
+  }
+
+  /* ---------------------------------  */
+ .btn{
+  color: white;
+    background-color: black;
+    border: solid gray 5px;
+    border-radius: 20px;
+  
+   
+ }
+
+ footer{
+  color: white;
+
+  background-color:black;
+  border: solid gray 5px;
+  margin: 5px;
+  padding: 10px;
+
+ }
+
+ .contenedorCartas{
+  background-color: gray;
+  margin: 10px;
+  padding: 25px;
+ }
+
+ .titulo{
+  text-align: center;
+ }

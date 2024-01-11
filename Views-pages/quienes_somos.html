@@ -12,71 +12,115 @@
 <body>
     <header>
            
-            
-        <nav class="navbar navbar-expand-lg bg-black"> <!------------------------ Nav ---------------------------------------------> 
-            <div class="container-fluid">
-              <img src="../image/logo.png" alt="logo" height="50px">
+             
+      <nav class="navbar navbar-expand-lg bg-black"> <!------------------------ Nav ---------------------------------------------> 
+        <div class="container-fluid">
+          <img src="../image/logo.png" alt="logo" height="50px">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"  >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Index</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicios.html" target="_parent">Servicios</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="./proyectos.html" target="_parent">Proyectos</a>
+              </li>
               
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"  >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Index</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./servicios.html" target="_parent">Servicios</a>
-                  </li>
-          
-                  <li class="nav-item">
-                    <a class="nav-link" href="./proyectos.html" target="_parent">Proyectos</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                      <a class="nav-link" href="./quienes_somos.html" target="_parent">Quienes somos</a>
-                  </li>
-          
-                  <li class="nav-item">
-                      <a class="nav-link" href="./contacto.html" target="_parent">Contacto</a>
-                  </li>
-
+              <li class="nav-item">
+                  <a class="nav-link" href="./quienes_somos.html" target="_parent">Quienes somos</a>
+              </li>
+      
+              <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html" target="_parent">Contacto</a>
+              </li>
+            </nav>
+        </nav>
     </header>
 
     
 <main>
     
 
-    <div class="caja_3" >
-
-        <h2> BIOGRAFIA </h2>
-        <hr>
-       
-        <h2> Soy Adrian Horogh, Tecnico Univ en Mecatronica, esta es mi pagina web en desarrollo</h2>
-        <br>
-        <h3> Actualmente me dedico al modelado 3D, desarrollo planos para produccion de Estructuras, diseños de chapas decorativas, diseño de logos empresariales, mi objetivo es podes desarrollarme en el mundo IT como programador, por lo que decidi afrontar este nuevo desafio llevando adelante la carrera de FULL Stack Developer en Coder-House</h3>
-        <hr>
-    </div>
     
-    <div class="caja_3" >
-    <img src="../image/banner.jpeg" alt="logo" width="auto" height="min-heigth" />
-   
-    </div>
-  
-  
-    <footer class="footer"><!--------------------------------- FOOTER------------------------------- -->
-        <div class="caja_3">
-            <h2>  Seguinos en redes sociales: </h2>
-            <br>
-            <ul>
-                <li> <h4> Instagram:  <a href="https://www.instagram.com/horogh_design/" target="_blank"> Horogh Design </a></h4>  </li>
-                <li><h4> Linkedin: <a href="https://www.linkedin.com/in/adri%C3%A1n-horogh-0080a11a4/" target="_blank"> linkedin</a> </h4>  </li>
-                <li><h4> E-mail: <a href="https://www.https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" target="_blank"> adrianhorogh@gmail.com</a> </h4>  </li>
-            </ul>
-         
-      
+ 
+
+  <section class="container-fluid hero d-flex justify-content-center align-items-center">
+    <h1 class="text-white bg-gray p-4">HOROGH DESIGN - QUIENES SOMOS  </h1>
+</section>
+
+
+<!--------------------------------- CARRUSEL-1 ------------------------------------------------------------------------------ -->
+
+<section class="productos container"> <!--------------------------------- CONTENEDOR ------------------------------- -->
+            
+    <div class="contenedorCartas"> <!--------------------------------- TARJETA 1 ------------------------------- -->
+
+        <div class="col-lg-6 my-5"> <!--------------------------------- CARRUSEL-1 ------------------------------- -->
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../image/banner.jpeg" class="d-block w-100" alt="..."  width="auto">
+                    </div>
+    
+                <div class="carousel-item">
+                    <img src="../image/foto cv.jpg" class="d-block w-100" alt="..."  width="auto">
+                </div>
+    
+                
+            </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+                        
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </footer>
+    </div>
+                <!--------------------------------- DESCRIPCION ------------------------------- -->
+    <div class="contenedorCartas"> 
+            <section class="nosotros container">
+                <div class="row y-3">
+                 
+                    <div class="col lg-3 my-5">
+                      <h3 class="titulo">Adrian Horogh</h3>
+                      <hr>
+                        
+                      <p> <h3>Tecnico Universitario en Mecatronica, actualmente me dedico al modelado 3D, desarrollo planos para produccion de Estructuras, logos empresariales, corte y plegado de chapas. Mi objetivo es poder desarrollarme en el mundo IT como programador, por lo que decidi afrontar este nuevo desafio llevando adelante la carrera de FULL Stack Developer en Coder-House </h3> 
+                      </p>
+                      </div> 
+                </div>
+    </div>
+</section>   
+
+
+
+
+
+
+<footer>
+        <h4>  Seguinos en redes sociales: </h4>
+            <ul>
+                <li> <h5> Instagram:  <a href="https://www.instagram.com/horogh_design/" class="btn" target="_blank"> Horogh Design </a></h5>  </li>
+                <li><h5> Linkedin: <a href="https://www.linkedin.com/in/adri%C3%A1n-horogh-0080a11a4/" class="btn" target="_blank"> linkedin</a> </h5>  </li>
+                <li><h5> E-mail: <a href="https://www.https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" class="btn" target="_blank"> E-mail</a> </h5>  </li>
+            </ul>
+</footer>
+    
+
+</div>
+
+
 
 </main>
 
