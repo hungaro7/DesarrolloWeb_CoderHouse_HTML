@@ -168,3 +168,13 @@ width: min-content;
  .titulo{
   text-align: center;
  }
+
+
+ .mb-3{
+  background-color: gray;
+  color: black;
+  margin: 20px;
+  padding: 10px;
+  font-style: oblique;
+  
+ }
