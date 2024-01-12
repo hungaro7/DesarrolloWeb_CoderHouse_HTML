@@ -1,4 +1,4 @@
-
+/* ------------------------------------- variables sass ---------------------------------*/
 $primary-color:gray;
 $secondar-color: black;
 $terciary-color: white;
@@ -52,7 +52,7 @@ align-items: center;
     /* ------------------------------------- NAV  ---------------------------------*/
 
 .nav-link{
-    color: white;
+    color: $terciary-color;
 }
 
 
@@ -78,17 +78,17 @@ align-items: center;
 
 
     /* ------------------------------------- TARJETAS  ---------------------------------*/
-.card img {
-    height: 300px; 
-    object-fit: fill; 
-    width: 85%;
-  }
-
-  .card {
+.card{
     transition: transform 0.3s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-color: $primary-color;
+    img {
+        height: 300px; 
+        object-fit: fill; 
+        width: 85%;
+        }
   }
+
 
 .card:hover {
     transform: scale(1.1)
@@ -133,7 +133,7 @@ align-items: center;
  }
 
  footer{
-  color: white;
+  color: $terciary-color;
 
   background-color: $secondar-color;
   border: solid $primary-color 5px;
