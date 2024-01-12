@@ -41,30 +41,6 @@ padding: 0px;
 align-items: center;
 }
 
-/* ------------------------------------- FORMULARIO ---------------------------------*/
-
-.contacto
-{
-background-color: silver;
-color: black;
-border: solid 8px black;
-margin: 50px;
-content: 20px;
-padding: 10px;
-height: 30%;
-width: auto;
-align-items: center;
-}
-
-form
-{
-background-color: rgb(173, 139, 76);
-color: black;
-border: solid 6px green;
-padding: 50px;
-width: min-content;
-}
-
 
     /* ------------------------------------- NAV  ---------------------------------*/
 
