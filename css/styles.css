@@ -4,34 +4,10 @@ margin: 0;
 padding: 0;
 }
 
-
-.boton /* ------------------------------------- BOTONES ---------------------------------*/
-{
-color: silver;
-background-color: orange;
-border: solid 3px black;
-width: auto;
-height: auto;
-margin:10px;
-padding: 10px;
-}
-
-
-h2 
-{
-color:white;
-
-width: auto;
-
-padding: 10px;
-
-border-radius: 10px;
-text-align: center;
-}
-
-section h4
+h4
 {
 color: white;
+text-align: justify;
 }
 
 article
@@ -42,10 +18,18 @@ align-items: center;
 }
 
 
-    /* ------------------------------------- NAV  ---------------------------------*/
-
+/* ------------------------------------- NAV  ---------------------------------*/
 .nav-link{
     color: white;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+  border-radius: 3px;
+}
+
+.navbar-toggler-icon::hover {
+  background-color: whitesmoke;
 }
 
 
@@ -61,23 +45,15 @@ align-items: center;
 
 }
 
-.bg-tomato{
-    background-color: orange;
-}
-.bg-blue{
-    background-color: skyblue;
-}
 
-
-
-    /* ------------------------------------- TARJETAS  ---------------------------------*/
+/* ------------------------------------- TARJETAS  ---------------------------------*/
 .card img {
     height: 300px; 
     object-fit: fill; 
     width: 85%;
   }
 
-  .card {
+.card {
     transition: transform 0.3s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-color: gray;
@@ -87,70 +63,61 @@ align-items: center;
     transform: scale(1.1)
   }
 
-  .contenedorCartas{
+.contenedorCartas{
     display: flex;
-    
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%; /* Ajusta el ancho al 100% en dispositivos móviles */
+    display: block; /* Mostrar las tarjetas en bloque para que estén una debajo de la otra */ /* Eliminar el margen derecho en dispositivos móviles */
+    margin-bottom: 20px; /* Añadir un espacio entre las tarjetas en dispositivos móviles */
+    padding: 10px;
   }
 
-  @media screen and (max-width: 768px) {
-    .card {
-      width: 100%; /* Ajusta el ancho al 100% en dispositivos móviles */
-      display: block; /* Mostrar las tarjetas en bloque para que estén una debajo de la otra */ /* Eliminar el margen derecho en dispositivos móviles */
-      margin-bottom: 20px; /* Añadir un espacio entre las tarjetas en dispositivos móviles */
-      padding: 10px;
-    }
-
-    .contenedorCartas{
-    display: block;
+.contenedorCartas{
+  display: block;
   }
 
-  }
+}
 
-  .navbar-toggler-icon {
-    background-color: white;
-    border-radius: 3px;
-  }
-
-  .navbar-toggler-icon::hover {
-    background-color: whitesmoke;
-  }
-
-  /* ---------------------------------  */
- .btn{
+  /* -------------BOTON--------------------  */
+.btn{
   color: white;
     background-color: black;
     border: solid gray 5px;
     border-radius: 20px;
-  
-   
- }
+  }
 
- footer{
+ /* ------------ FOOTER ---------------------  */
+footer{
   color: white;
-
   background-color:black;
   border: solid gray 5px;
   margin: 5px;
   padding: 10px;
+}
 
- }
-
- .contenedorCartas{
+.contenedorCartas{
   background-color: gray;
   margin: 10px;
   padding: 25px;
- }
+}
 
- .titulo{
+.titulo{
   text-align: center;
- }
+}
+
+.parrafo{
+  text-align: justify;
+  background-color: orange;
+}
 
 
- .mb-3{
+.mb-3{
   background-color: gray;
   color: black;
   margin: 20px;
   padding: 10px;
   font-style: oblique;
-  
- }
+}
