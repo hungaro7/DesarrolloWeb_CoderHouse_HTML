@@ -28,9 +28,21 @@ align-items: center;
   border-radius: 3px;
 }
 
-.navbar-toggler-icon::hover {
-  background-color: whitesmoke;
+
+.navbar-toggler-icon:hover {
+  background-color: orange;
 }
+
+/*
+.icon{
+  background-color:yellow;
+}
+
+
+.icon:hover{
+    background-color: orange;
+  }
+*/
 
 
 
