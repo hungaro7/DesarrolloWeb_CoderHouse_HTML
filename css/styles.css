@@ -22,6 +22,10 @@ align-items: center;
 .nav-link{
     color: white;
 }
+.nav-link:hover{
+  color: orange;
+}
+
 
 .navbar-toggler-icon {
   background-color: white;
@@ -32,19 +36,6 @@ align-items: center;
 .navbar-toggler-icon:hover {
   background-color: orange;
 }
-
-/*
-.icon{
-  background-color:yellow;
-}
-
-
-.icon:hover{
-    background-color: orange;
-  }
-*/
-
-
 
 .hero{
     background-image: url(../image/BANNER\ BLACK.jpg);
@@ -121,7 +112,7 @@ footer{
 }
 
 .parrafo{
-  text-align: justify;
+  justify-content: justify;
   background-color: orange;
 }
 
