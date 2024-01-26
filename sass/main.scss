@@ -54,6 +54,9 @@ align-items: center;
 .nav-link{
     color: $terciary-color;
 }
+.nav-link:hover{
+  color:blue;
+}
 
 
 
@@ -68,16 +71,7 @@ align-items: center;
 
 }
 
-.bg-tomato{
-    background-color: orange;
-}
-.bg-blue{
-    background-color: skyblue;
-}
-
-
-
-    /* ------------------------------------- TARJETAS  ---------------------------------*/
+/* ------------------------------------- TARJETAS  ---------------------------------*/
 .card{
     transition: transform 0.3s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -139,26 +133,29 @@ align-items: center;
   border: solid $primary-color 5px;
   margin: 5px;
   padding: 10px;
+}
 
- }
-
- .contenedorCartas{
+.contenedorCartas{
   background-color: $primary-color;
   margin: 10px;
   padding: 25px;
- }
+}
 
- .titulo{
+.titulo{
   text-align: center;
- }
+}
 
 
- .mb-3{
+.parrafo{
+  justify-content: justify;
+}
+
+
+.mb-3{
   background-color: $primary-color;
   color: $secondar-color;
   margin: 20px;
   padding: 10px;
   font-style: oblique;
-  
- }
+}
 

@@ -39,6 +39,10 @@ article {
   color: white;
 }
 
+.nav-link:hover {
+  color: blue;
+}
+
 .hero {
   background-image: url(../image/BANNER\ BLACK.jpg);
   height: 40vh;
@@ -46,14 +50,6 @@ article {
   background-size: cover;
   margin-bottom: 10px;
   margin-top: 10px;
-}
-
-.bg-tomato {
-  background-color: orange;
-}
-
-.bg-blue {
-  background-color: skyblue;
 }
 
 /* ------------------------------------- TARJETAS  ---------------------------------*/
@@ -120,6 +116,10 @@ footer {
 
 .titulo {
   text-align: center;
+}
+
+.parrafo {
+  justify-content: justify;
 }
 
 .mb-3 {
